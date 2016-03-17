@@ -1,0 +1,12 @@
+---
+- name: "Install GoCD!"
+  hosts: go-server
+  roles:
+    - common
+    - go_server
+
+- name: "Install GoCD!"
+  hosts: go-agent
+  roles:
+    - common
+    - go_agent

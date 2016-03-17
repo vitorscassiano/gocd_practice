@@ -1,0 +1,5 @@
+- name: "Install GoCD server"
+  yum: name=go-server state=present update_cache=yes
+
+- name: "Ensure that the service is running"
+  service: name=go-server state=started
